@@ -10,6 +10,11 @@ namespace Istriwala.Web.Controllers
     {
         public ActionResult Index()
         {
+            return View("Login");
+        }
+
+        public ActionResult Login()
+        {
             return View();
         }
 

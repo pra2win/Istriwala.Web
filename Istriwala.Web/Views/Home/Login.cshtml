@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/core")
+@Scripts.Render("~/bundles/login")
+
+
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/Login.css?v=1" rel="stylesheet" />
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+    <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+
+            <div class="box">
+                <div class="shape1"></div>
+                <div class="shape2"></div>
+                <div class="shape3"></div>
+                <div class="shape4"></div>
+                <div class="shape5"></div>
+                <div class="shape6"></div>
+                <div class="shape7"></div>
+                <div class="float">
+                    <form class="form" id="loginform"  role="form">
+                        <div class="form-group">
+                            <label for="username" class="text-white">Username:</label><br>
+                            <input type="text" name="username" id="txtUid" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-white">Password:</label><br>
+                            <input type="text" name="password" id="txtPwd" class="form-control">
+                        </div>
+                        <div class="form-group" style="margin-bottom:auto">
+                            <div  id="btnLogin" class="btn btn-primary" >Login</div>
+                        </div>
+                        <div id="loginFailed" style="display:none;font-weight:bold;color:crimson;">Login failed.</div>
+                    </form>
+                    <div style="display:none" id="loaderLogin"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
